@@ -1,1 +1,0 @@
-{"name":"A. Expression","url":"https://codeforces.com/contest/479/problem/A","interactive":false,"memoryLimit":0,"timeLimit":3000,"group":"Codeforces - Codeforces Round 274 (Div. 2)","tests":[{"id":1789630043984,"input":"2\n10\n3\n","output":"60\n"},{"id":1789630043984,"input":"2\n10\n3\n","output":"60\n"}],"srcPath":"c:\\cpp-study\\A_Expression.cpp"}
