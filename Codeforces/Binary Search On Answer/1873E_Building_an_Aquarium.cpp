@@ -39,3 +39,5 @@ int main(){
         cout << left << endl;
     }
 }
+/*这里要套最大值的板子 right的上界要覆盖到全部可能
+check函数里面 一旦超过就立刻返回false 这样不会整数溢出*/
