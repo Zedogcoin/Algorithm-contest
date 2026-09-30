@@ -1,4 +1,4 @@
-
+/*1899A Game with Integers*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -12,7 +12,14 @@ const ll LINF = 4e18;
 const int MOD = 1e9 + 7;
 
 void solve() {
-    
+    int n;
+    cin >> n;
+    if(n % 3 == 0){
+        cout << "Second" << endl;
+    }
+    else{
+        cout << "First" << endl;
+    }
 }
 
 int main() {
@@ -28,3 +35,5 @@ int main() {
 
     return 0;
 }
+/*如果余1或者2,直接就可以秒了对手
+如果被3整除，就跟对方拖后期就行了。。*/

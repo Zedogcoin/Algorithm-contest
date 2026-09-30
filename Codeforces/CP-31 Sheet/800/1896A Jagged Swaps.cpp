@@ -1,3 +1,4 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,21 +12,19 @@ const ll LINF = 4e18;
 const int MOD = 1e9 + 7;
 
 void solve() {
-    int n,k,ans = 0;
-    string s;
-    cin >> n >> k >> s;
-    for(size_t i = 0;i < s.size();i += k){
-        int flag = 0;
-        for(int j = i;j < i + k;j++){
-            if(s[j] == '0'){
-                flag = 1;
-            }
-        }
-        if(flag == 0){
-            ans++;
-        }
+    int n;
+    cin >> n;
+    vector <int> a(n + 1);
+    for(int i = 1;i <= n;i++){
+        cin >> a[i];
     }
-    cout << ans << endl;
+    if(a[1] == 1){
+        cout << "YES" << endl;
+    }
+    else{
+        cout << "NO" << endl;
+    }
+    
 }
 
 int main() {
@@ -41,3 +40,6 @@ int main() {
 
     return 0;
 }
+/*感觉智商被羞辱了。。
+只要第一个排好后面就冒泡排序山峰向右移动
+否则永远无法把1挪到第一位 因为1不会成为山峰 只能被往后移动*/

@@ -1,4 +1,4 @@
-
+/*1878A*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -12,7 +12,19 @@ const ll LINF = 4e18;
 const int MOD = 1e9 + 7;
 
 void solve() {
-    
+    unordered_set <int> s;
+    int n,k,a;
+    cin >> n >> k;
+    for(int i = 0;i < n;i++){
+        cin >> a;
+        s.insert(a);
+    }
+    if(s.count(k)){
+        cout << "YES" << endl;
+    }
+    else{
+        cout << "NO" << endl;
+    }
 }
 
 int main() {
@@ -28,3 +40,6 @@ int main() {
 
     return 0;
 }
+/*实质上只要取最短子段就行了
+就是判断这个数有没出现过
+重新用了一下hash*/
