@@ -12,11 +12,11 @@ const ll LINF = 4e18;
 const int MOD = 1e9 + 7;
 int r;
 int nums[1010][1010],memo[1010][1010];
-int dfs(int row,int col){
+int dfs(int row,int col){//定义dfs是rowcol位置开始 走到底最多能获得多少分
    if(row == r - 1){
     return nums[row][col];
    }
-   if(memo[row][col] != -1){
+   if(memo[row][col] != -1){//memo就是算过一遍了 直接取出memo
     return memo[row][col];
    }
    int left = dfs(row + 1,col);
@@ -37,3 +37,7 @@ int main() {
     cout << dfs(0,0) << endl;
     return 0;
 }
+/*记忆化搜索的板子题
+mark一下吧 本来是想学dp的
+没太理解额 2026.9.30记
+*/
